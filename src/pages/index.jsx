@@ -20,9 +20,7 @@ import logoTailwind from '@/images/svg/tailwind.svg'
 import logoBootstrap from '@/images/svg/bootstrap.svg'
 import logoMongo from '@/images/svg/mongo.svg'
 import logoNode from '@/images/svg/node.svg'
-
-import { generateRssFeed } from '@/lib/generateRssFeed'
-import { getAllArticles } from '@/lib/getAllArticles'
+import logoGraphQL from '@/images/svg/graphql.svg'
 
 function Projects() {
   let projects = [
@@ -32,15 +30,15 @@ function Projects() {
         'The start of it all, this is my portfolio. Its the very website you are viewing at the moment. It is built using NextJs, Tailwind CSS and hosted on Vercel.',
       img: Portfolio,
       logos: [logoNextjs, logoTailwind],
-      url: 'https://www.google.com/',
-      git: 'https://www.google.com/',
+      url: 'https:/www.ksweaver.com/',
+      git: 'https://github.com/KalebWeaver/portfolio',
     },
     {
-      title: 'Bug Tracker App',
+      title: 'Social Media Clone',
       description:
         'The start of it all, this is my portfolio. Its the very website you are viewing at the moment. It is built using NextJs, Tailwind CSS and hosted on Vercel.',
       img: Sample,
-      logos: [logoReact, logoRedux, logoTailwind, logoNode, logoMongo],
+      logos: [logoReact, logoGraphQL, logoNode, logoMongo],
       url: 'https://www.google.com/',
       git: 'https://www.google.com/',
     },
@@ -152,7 +150,7 @@ function Skills() {
     {
       name: 'Javascript',
       logo: logoJavascript,
-      percent: '70%',
+      percent: '50%',
     },
     {
       name: 'ReactJs',
@@ -173,6 +171,11 @@ function Skills() {
       name: 'NodeJs',
       logo: logoNode,
       percent: '70%',
+    },
+    {
+      name: 'GraphQL',
+      logo: logoGraphQL,
+      percent: '40%',
     },
     {
       name: 'MongoDB',
@@ -236,7 +239,7 @@ export default function Home() {
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
-              href="https://github.com"
+              href="https://github.com/KalebWeaver"
               aria-label="Follow on GitHub"
               icon={GitHubIcon}
             />
@@ -256,18 +259,4 @@ export default function Home() {
       </Container>
     </>
   )
-}
-
-export async function getStaticProps() {
-  if (process.env.NODE_ENV === 'production') {
-    await generateRssFeed()
-  }
-
-  return {
-    props: {
-      articles: (await getAllArticles())
-        .slice(0, 4)
-        .map(({ component, ...meta }) => meta),
-    },
-  }
 }
