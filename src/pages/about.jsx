@@ -54,11 +54,12 @@ export default function About() {
                 out some of my work in the projects section of the home page.
               </p>
               <p>
-                I have always had a passion for learning new things. There isn't
-                a better feeling than diving head first into a new project and
-                learning something new. Comming from being self taught to the
-                developer I am today has been a long journey. I am always
-                looking for new ways to push myself and learn new technologies.
+                I have always had a passion for learning new things. There
+                isn&apost a better feeling than diving head first into a new
+                project and learning something new. Comming from being self
+                taught to the developer I am today has been a long journey. I am
+                always looking for new ways to push myself and learn new
+                technologies.
               </p>
               <p>
                 I&aposm open to job opportunites where I can contribute, learn
