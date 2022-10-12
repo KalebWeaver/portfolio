@@ -227,10 +227,10 @@ export default function Home() {
             Software developer, designer and entrepreneur.
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            My name is Kaleb, I'm an aspiring full stack software developer
+            My name is Kaleb, I&aposm an aspiring full stack software developer
             based in Houston, Texas. I have worked with a variety of
             technologies and frameworks, with a strong focus currently on NextJs
-            and React. I'm passionate about learning new and challenging
+            and React. I&aposm passionate about learning new and challenging
             technologies that will help me grow as a developer.
           </p>
           <div className="mt-6 flex gap-6">

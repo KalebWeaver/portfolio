@@ -37,34 +37,34 @@ export default function About() {
         <title>About - Spencer Sharp</title>
         <meta
           name="description"
-          content="I’m Spencer Sharp. I live in New York City, where I design the future."
+          content="I&aposm Spencer Sharp. I live in New York City, where I design the future."
         />
       </Head>
       <Container className="mt-16 sm:mt-32">
         <div className="grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-y-12">
           <div className="lg:order-first lg:row-span-2">
             <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-              I’m Kaleb Weaver. I live in Houston, Texas. Where I design the
-              future.
+              Hello, I&aposm Kaleb Weaver. I live in Houston, Texas. Where I
+              design the future.
             </h1>
             <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
               <p>
-                I'm a Full-Stack Web Developer with a passion for building the
-                front and back ends of websites and web applications. Check out
-                some of my work in the projects section of the home page.
+                I&aposm a Full-Stack Web Developer with a passion for building
+                the front and back ends of websites and web applications. Check
+                out some of my work in the projects section of the home page.
               </p>
               <p>
                 I have always had a passion for learning new things. There isn't
-                a better feeling than diving headfirst into a new project and
+                a better feeling than diving head first into a new project and
                 learning something new. Comming from being self taught to the
                 developer I am today has been a long journey. I am always
                 looking for new ways to push myself and learn new technologies.
               </p>
               <p>
-                I'm open to job opportunites where I can contribute, learn and
-                grow. If you have a position that you think I would be a good
-                fit for that matches my skills and experience, please feel free
-                to not hesitate and contact me.
+                I&aposm open to job opportunites where I can contribute, learn
+                and grow. If you have a position that you think I would be a
+                good fit for that matches my skills and experience, please feel
+                free to not hesitate and contact me.
               </p>
             </div>
           </div>
