@@ -37,7 +37,8 @@ function Projects() {
     },
     {
       title: 'Bug Tracker App',
-      description: 'My personal portfolio website',
+      description:
+        'The start of it all, this is my portfolio. Its the very website you are viewing at the moment. It is built using NextJs, Tailwind CSS and hosted on Vercel.',
       img: Sample,
       logos: [logoReact, logoRedux, logoTailwind, logoNode, logoMongo],
       url: 'https://www.google.com/',
@@ -62,7 +63,7 @@ function Projects() {
   ]
 
   return (
-    <div className="w-full rounded-2xl border border-zinc-100 p-4 shadow dark:border-zinc-700/40 dark:shadow-cyan-700 sm:w-5/6">
+    <div className="w-full rounded-2xl border border-zinc-100 p-4 shadow dark:border-zinc-700/40 dark:shadow-cyan-700 md:w-5/6">
       <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
         <WalletIcon className="h-6 w-6 flex-none" />
         <span className="ml-3">Projects</span>
@@ -81,7 +82,7 @@ function Projects() {
                 height={300}
               />
             </div>
-            <dl className="mt-4 flex w-full flex-auto flex-wrap gap-4 sm:w-1/3">
+            <dl className="mt-4 flex w-fit flex-auto flex-wrap gap-4 sm:w-1/3">
               <dt className="sr-only">Title</dt>
               <dd className="w-full flex-none text-lg font-medium text-zinc-900 underline dark:text-zinc-100">
                 {project.title}
@@ -90,14 +91,14 @@ function Projects() {
               <dd className="w-full flex-none text-sm font-medium text-zinc-900 dark:text-zinc-100">
                 {project.description}
               </dd>
-              <div className="flex flex-row items-center gap-3">
+              <div className="grid grid-cols-4 items-center gap-4 md:grid-cols-5">
                 {project.logos.map((logo, i) => (
                   <Image
                     key={i}
                     src={logo}
                     alt="Project Image"
-                    width={40}
-                    height={40}
+                    width={30}
+                    height={30}
                   />
                 ))}
               </div>
@@ -181,7 +182,7 @@ function Skills() {
   ]
 
   return (
-    <div className="h-fit w-full rounded-2xl border border-zinc-100 p-4 shadow dark:border-zinc-700/40 dark:shadow-cyan-700 sm:w-1/3">
+    <div className="h-fit w-full rounded-2xl border border-zinc-100 p-4 shadow dark:border-zinc-700/40 dark:shadow-cyan-700 md:w-1/3">
       <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
         <CogIcon className="h-6 w-6 flex-none" />
         <span className="ml-3">Skills</span>
