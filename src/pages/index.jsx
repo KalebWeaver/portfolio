@@ -6,6 +6,7 @@ import Link from 'next/link'
 
 import Sample from '../images/Sample.jpg'
 import Portfolio from '@/images/projects/portfolio.png'
+import SMC from '@/images/projects/SMC.png'
 
 import { Container } from '@/components/Container'
 import { GitHubIcon, LinkedInIcon } from '@/components/SocialIcons'
@@ -36,11 +37,11 @@ function Projects() {
     {
       title: 'Social Media Clone',
       description:
-        'The start of it all, this is my portfolio. Its the very website you are viewing at the moment. It is built using NextJs, Tailwind CSS and hosted on Vercel.',
-      img: Sample,
+        'This was the project I had aimed for while dipping my toes in and learning GraphQL. I used ReactJS, Apollo-Client, and Semantic UI for the frontend and NodeJS, Express, Apollo-Server, and MongoDB for the backend.',
+      img: SMC,
       logos: [logoReact, logoGraphQL, logoNode, logoMongo],
-      url: 'https://www.google.com/',
-      git: 'https://www.google.com/',
+      url: 'https://smc.ksweaver.com/',
+      git: 'https://github.com/KalebWeaver/social-media-clone',
     },
     {
       title: 'Portfolio',
