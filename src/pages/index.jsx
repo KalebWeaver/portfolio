@@ -35,6 +35,15 @@ function Projects() {
       git: 'https://github.com/KalebWeaver/portfolio',
     },
     {
+      title: 'Support Ticket App',
+      description:
+        'This project was my foot into RTK Query for Redux-Toolkit. It is built with a simple UI/UX but goes deeper into using Redux-Toolkit and RTK Query to handle API calls, and data caching. The backend features deeper JWT authentication and authorization using short lived access tokens with refresh tokens.',
+      img: Sample,
+      logos: [logoReact, logoRedux, logoTailwind, logoNode, logoMongo],
+      url: 'https://sta.ksweaver.com/',
+      git: 'https://github.com/KalebWeaver/support-ticket-app',
+    },
+    {
       title: 'Social Media Clone',
       description:
         'This was the project I had aimed for while dipping my toes in and learning GraphQL. I used ReactJS, Apollo-Client, and Semantic UI for the frontend and NodeJS, Express, Apollo-Server, and MongoDB for the backend.',
@@ -42,14 +51,6 @@ function Projects() {
       logos: [logoReact, logoGraphQL, logoNode, logoMongo],
       url: 'https://smc.ksweaver.com/',
       git: 'https://github.com/KalebWeaver/social-media-clone',
-    },
-    {
-      title: 'Portfolio',
-      description: 'My personal portfolio website',
-      img: Sample,
-      logos: [logoNextjs, logoTailwind],
-      url: 'https://www.google.com/',
-      git: 'https://www.google.com/',
     },
     {
       title: 'Portfolio',
@@ -102,11 +103,19 @@ function Projects() {
                 ))}
               </div>
               <div className="text-md w-full flex-none font-medium text-cyan-400">
-                <a href={project.url} className=" hover:text-cyan-600">
+                <a
+                  href={project.url}
+                  target="_blank"
+                  className=" hover:text-cyan-600"
+                >
                   Live Demo
                 </a>{' '}
                 |{' '}
-                <a href={project.git} className="hover:text-cyan-600">
+                <a
+                  href={project.git}
+                  target="_blank"
+                  className="hover:text-cyan-600"
+                >
                   Git Repo
                 </a>
               </div>
