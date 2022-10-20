@@ -106,6 +106,7 @@ function Projects() {
                 <a
                   href={project.url}
                   target="_blank"
+                  rel="noopener noreferrer"
                   className=" hover:text-cyan-600"
                 >
                   Live Demo
@@ -114,6 +115,7 @@ function Projects() {
                 <a
                   href={project.git}
                   target="_blank"
+                  rel="noopener noreferrer"
                   className="hover:text-cyan-600"
                 >
                   Git Repo
