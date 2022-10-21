@@ -56,16 +56,24 @@ export default function About() {
               <p>
                 I have always had a passion for learning new things. There
                 isn&apos;t a better feeling than diving head first into a new
-                project and learning something new. Comming from being self
-                taught to the developer I am today has been a long journey. I am
-                always looking for new ways to push myself and learn new
-                technologies.
+                project and learning something new. Being self taught I took a
+                step into the unknown, and with that, I have been able to learn
+                a lot of new skills from pushing myself further out of my
+                comfort zone.
+              </p>
+              <p>
+                From what had started as a side hobby of trying to tinker with
+                games to see what new things I could come up with, has ignited a
+                new inspiration and passion for software development in general.
+                Day by day I find myself sitting down and looking around at the
+                world around me and thinking of all the different ways
+                technologies are built and talking to each other.
               </p>
               <p>
                 I&apos;m open to job opportunites where I can contribute, learn
-                and grow. If you have a position that you think I would be a
-                good fit for that matches my skills and experience, please feel
-                free to not hesitate and contact me.
+                and grow to further develope myself. If you have a position that
+                you think I would be a good fit for that matches my skills and
+                experience, please feel free to not hesitate and contact me.
               </p>
             </div>
           </div>
@@ -77,9 +85,6 @@ export default function About() {
                 className="mt-4"
               >
                 Follow on GitHub
-              </SocialLink>
-              <SocialLink href="#" icon={LinkedInIcon} className="mt-4">
-                Follow on LinkedIn
               </SocialLink>
               <SocialLink
                 href="mailto:kaleb@ksweaver.com"
