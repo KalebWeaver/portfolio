@@ -7,6 +7,7 @@ import Link from 'next/link'
 import Sample from '../images/Sample.jpg'
 import Portfolio from '@/images/projects/portfolio.png'
 import SMC from '@/images/projects/SMC.png'
+import STA from '@/images/projects/STA.png'
 
 import { Container } from '@/components/Container'
 import { GitHubIcon, LinkedInIcon } from '@/components/SocialIcons'
@@ -38,7 +39,7 @@ function Projects() {
       title: 'Support Ticket App',
       description:
         'This project was my foot into RTK Query for Redux-Toolkit. It is built with a simple UI/UX but goes deeper into using Redux-Toolkit and RTK Query to handle API calls, and data caching. The backend features deeper JWT authentication and authorization using short lived access tokens with refresh tokens.',
-      img: Sample,
+      img: STA,
       logos: [logoReact, logoRedux, logoTailwind, logoNode, logoMongo],
       url: 'https://sta.ksweaver.com/',
       git: 'https://github.com/KalebWeaver/support-ticket-app',
@@ -52,14 +53,6 @@ function Projects() {
       url: 'https://smc.ksweaver.com/',
       git: 'https://github.com/KalebWeaver/social-media-clone',
     },
-    {
-      title: 'Portfolio',
-      description: 'My personal portfolio website',
-      img: Sample,
-      logos: [logoNextjs, logoTailwind],
-      url: 'https://www.google.com/',
-      git: 'https://www.google.com/',
-    },
   ]
 
   return (
@@ -72,17 +65,17 @@ function Projects() {
         {projects.map((project, Index) => (
           <li
             key={Index}
-            className=" flex flex-col gap-6 rounded-lg border p-4 shadow dark:border-zinc-700/40 dark:shadow-cyan-700 sm:flex-row"
+            className=" flex flex-col gap-6 rounded-lg border p-6 shadow dark:border-zinc-700/40 dark:shadow-cyan-700"
           >
-            <div className="mt-4 flex w-full items-center justify-center shadow-md shadow-zinc-800/5 sm:w-1/2">
+            <div className="mt-4 flex w-full items-center justify-center overflow-hidden rounded-lg border shadow-sm shadow-zinc-800/5 dark:border-zinc-700/40 dark:shadow-cyan-700 ">
               <Image
                 src={project.img}
+                layout="fill"
                 alt="Project Image"
-                width={400}
-                height={300}
+                objectFit="cover"
               />
             </div>
-            <dl className="mt-4 flex w-fit flex-auto flex-wrap gap-4 sm:w-1/3">
+            <dl className="mt-4 flex w-fit flex-auto flex-wrap gap-4">
               <dt className="sr-only">Title</dt>
               <dd className="w-full flex-none text-lg font-medium text-zinc-900 underline dark:text-zinc-100">
                 {project.title}
@@ -234,7 +227,7 @@ export default function Home() {
         <title>Kaleb Weaver - Aspiring software developer</title>
         <meta
           name="description"
-          content="I’m Spencer, a software designer and entrepreneur based in New York City. I’m the founder and CEO of Planetaria, where we develop technologies that empower regular people to explore space on their own terms."
+          content="Im Kaleb Weaver, an aspiring software developer based out of Houston, Texas. "
         />
       </Head>
       <Container className="mt-9">

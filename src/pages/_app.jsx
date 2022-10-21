@@ -1,4 +1,6 @@
 import { useEffect, useRef } from 'react'
+import { ToastContainer } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
 
 import { Footer } from '@/components/Footer'
 import { Header } from '@/components/Header'
@@ -33,6 +35,16 @@ export default function App({ Component, pageProps, router }) {
         </main>
         <Footer />
       </div>
+      <ToastContainer
+        position="top-right"
+        autoClose={3000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        draggable={false}
+        pauseOnVisibilityChange
+        closeOnClick
+        pauseOnHover
+      />
     </>
   )
 }
